@@ -11,6 +11,9 @@ class PostsTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+        App\Posts::create([
+            'title' => 'This is first title',
+            'content' => 'This is first content. This is first content. This is first content. This is first content. This is first content.This is first content. This is first content. This is first content. This is first content. This is first content.',
+        ]);
     }
 }

@@ -11,6 +11,9 @@ class BookTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+        App\Book::create([
+            'book_name' => 'Learn php',
+            'author' => 'Maidul Islam',
+        ]);
     }
 }

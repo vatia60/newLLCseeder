@@ -11,6 +11,9 @@ class CategoriesTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+        App\Categories::create([
+            'category_name' => 'php',
+            'slug' => 'newphp',
+        ]);
     }
 }
