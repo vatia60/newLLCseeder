@@ -20,7 +20,8 @@ class CreateCategoriesTable extends Migration
             $table->string('category_name');
             $table->string('slug');
             $table->timestamps();
-            $table->foreign('category_id')->references('id')->on('books')->onDelete('cascade'); 
+            $table->foreign('category_id')->references('id')->on('posts')->onDelete('cascade');
+            $table->foreign('user_id')->references('id')->on('book')->onDelete('cascade');
         });
     }
 
